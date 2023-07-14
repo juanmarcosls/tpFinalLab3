@@ -1,13 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> 
-    <div v-if="$store.state.correcto">|
-    <router-link to="/CompraVenta">Compra o vende cryptos aqui</router-link> |
-    <router-link to="/HistorialDeMovimientos">Historial de tus compras y ventas</router-link> |
-    <router-link to="/MiEstado">Mi estado</router-link>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+    <div v-if="$store.state.correcto">
+      <router-link to="CompraVenta">Comprar Vender</router-link> |
+      <router-link to="/HistorialDeMovimientos">Movimientos</router-link> |
+      <router-link to="/MiEstado">Mi Estado</router-link>
     </div>
-  </nav>
-  <router-view />
+
+    <router-view />
+  </div>
 </template>
 
 <style>
@@ -16,7 +17,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0011ff;
 }
 
 nav {
@@ -25,10 +26,10 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #1b3c5e;
+  color: #0011ff;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #002fff;
 }
 </style>

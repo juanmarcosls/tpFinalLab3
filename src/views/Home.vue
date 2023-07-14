@@ -3,7 +3,7 @@
     <div v-if="$store.state.usuario">
       <h1>Bienvenido {{ $store.state.usuario }}</h1>
       <div class="imgcontenedor">
-        <router-link to="Compra-Venta"><div class="img compraVenta"></div> </router-link>
+        <router-link to="CompraVenta"><div class="img compraVenta"></div> </router-link>
         <router-link to="/HistorialDeMovimientos"><div class="img movimientos"></div> </router-link>
         <router-link to="/MiEstado"><div class="img estado"></div> </router-link>
       </div>
@@ -30,23 +30,32 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 h1 {
-  background: #ffffff;
-  text-shadow: 2px 2px 0 #144a0c, 2px -2px 0 #144a0c, -2px 2px 0 #144a0c,
-    -2px -2px 0 #144a0c, 2px 0px 0 #144a0c, 0px 2px 0 #144a0c, -2px 0px 0 #144a0c,
-    0px -2px 0 #144a0c;
-  color: #ffffff;
+  background: #fffb00;
+  text-shadow: 2px 2px 0 #190bdd, 2px -2px 0 #190bdd, -2px 2px 0 #190bdd,
+    -2px -2px 0 #190bdd, 2px 0px 0 #190bdd, 0px 2px 0 #190bdd, -2px 0px 0 #190bdd,
+    0px -2px 0 #190bdd;
+  color: #fffb00;
   background: transparent;
   font-size: 45px;
 }
 .img {
-  width: 95%;
+  width: 93%;
   background: transparent;
-  height: 80px;
-  padding: 32px;
-  margin: 15px;
+  height: 200px;
+  padding: 2px;
+  margin: 1px;
   image-rendering: auto;
   background-repeat: no-repeat;
   background-position: 0px center;
+}
+.compraVenta {
+  background-image: url("../assets/compraventa.jpeg");
+}
+.movimientos {
+  background-image: url("../assets/movimientos.jpeg");
+}
+.estado {
+  background-image: url("../assets/miestado.jpeg");
 }
 
 </style>

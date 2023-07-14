@@ -2,16 +2,16 @@
   <div class="login-page">
     <div class="form">
       <form class="login-form">
-        <input type="text" placeholder="usuario" v-model="nuevoUsuario" />
+        <input type="text" placeholder="Ingrese su usuario aquí" v-model="nuevoUsuario" />
         <p id="mensaje_1">{{ mensaje }}</p>
       </form>
-      <button @click="Ingresar">Ingresar</button>
+      <button v-on:keydown.enter="Ingresar" @click="Ingresar">Ingresar</button>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: "login",
+  name: "Login",
   data() {
     return {
       nuevoUsuario: "",
@@ -51,7 +51,7 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0004ff;
 }
 .login-page {
   width: 360px;
@@ -61,7 +61,7 @@ export default {
 .form {
   position: relative;
   z-index: 1;
-  background: #ffffff;
+  background: #ffee00;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -71,7 +71,7 @@ export default {
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #ffffff;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -83,11 +83,11 @@ export default {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4caf50;
+  background: #0026ff;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #ffffff;
+  color: #ffee00;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -96,7 +96,7 @@ export default {
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #43a047;
+  background: #0004ff;
 }
 #mensaje_1 {
   margin-top: -5px;
