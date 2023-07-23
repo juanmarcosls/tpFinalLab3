@@ -28,13 +28,14 @@ export default {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 h1 {
-  background: #fffb00;
-  text-shadow: 2px 2px 0 #190bdd, 2px -2px 0 #190bdd, -2px 2px 0 #190bdd,
-    -2px -2px 0 #190bdd, 2px 0px 0 #190bdd, 0px 2px 0 #190bdd, -2px 0px 0 #190bdd,
-    0px -2px 0 #190bdd;
-  color: #fffb00;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000,
+    0px -2px 0 #000000;
+  color: #ffffff;
   background: transparent;
   font-size: 45px;
 }

@@ -1,4 +1,5 @@
 <template>
+  <div class="imgLogin">
   <div class="login-page">
     <div class="form">
       <form class="login-form">
@@ -8,6 +9,8 @@
       <button v-on:keydown.enter="Ingresar" @click="Ingresar">Ingresar</button>
     </div>
   </div>
+  </div>
+
 </template>
 <script>
 export default {
@@ -47,21 +50,32 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #4e502c;
 }
 
 #nav a.router-link-exact-active {
-  color: #0004ff;
+  color: #2187a7;
 }
 .login-page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
 }
+.imgLogin{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/criptomonedas.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 .form {
   position: relative;
   z-index: 1;
-  background: #ffee00;
+  background: #00084d;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -71,7 +85,7 @@ export default {
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #ffffff;
+  background: #c0bd25;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -83,11 +97,11 @@ export default {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #0026ff;
+  background: #c0bd25;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #ffee00;
+  color: #000000;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -96,7 +110,7 @@ export default {
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #0004ff;
+  background: #666666;
 }
 #mensaje_1 {
   margin-top: -5px;
